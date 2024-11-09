@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Project007</title>
+</head>
+<body>
+    
+    <div class="w-full min-h-screen bg-slateBg flex items-center justify-center">
+        <div class="bg-white rounded w-[360px] pt-8 shadow-cont">
+            <div class="mt-6 mb-16 text-center">
+                <h2 class="text-green font-MonoSans text-4xl font-medium">Tasbih</h2>
+            </div>
+            <div class="flex flex-col gap-4 mb-10">
+                <div class="text-center font-MonoSans">
+                    <h3 id="changingText" class="text-3xl lowercase">Subhanalloh</h3>
+                </div>
+                <div>
+                    <div class="w-[150px] h-[150px] rounded-full bg-green flex items-center justify-center mx-auto cursor-default shadow-cont">
+                        <p class="text-3xl text-[#7bd3a1]">
+                            <span id="countNumber" class="text-[#c0f8d8]">0</span>
+                            <span>/</span>
+                            <span>33</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-7 flex items-center justify-around rounded-t-lg shadow-top-only">
+                <button onclick="reset()" class="px-8 py-3 text-white bg-green rounded-3xl shadow-cont">Reset</button>
+                <button onclick="inc()" class="px-8 py-3 text-white bg-green rounded-3xl shadow-cont">Count</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
